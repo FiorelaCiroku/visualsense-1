@@ -5,5 +5,12 @@
       "name": "VisualSense",
       "userDefined": true
     }
+  ],
+  "fragments": [
+    {
+      "name": "VisualSense",
+      "ontologyName": "VisualSense",
+      "fileName": "VisualSense/VisualSense/visualsense.owl"
+    }
   ]
 }
