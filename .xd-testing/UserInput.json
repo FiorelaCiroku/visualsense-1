@@ -1,46 +1,32 @@
 {
-    "ontologies": [
+  "ontologies": [
+    {
+      "url": "https://raw.githubusercontent.com/delfimpandiani/visualsense/main/visualsense.owl",
+      "name": "VisualSense",
+      "userDefined": true
+    }
+  ],
+  "fragments": [
+    {
+      "name": "VisualSense",
+      "ontologyName": "VisualSense",
+      "fileName": "VisualSense/VisualSense/visualsense.owl",
+      "tests": [
         {
-            "url": "https://raw.githubusercontent.com/delfimpandiani/visualsense/main/visualsense.owl",
-            "name": "VisualSense",
-            "userDefined": true
+          "type": "COMPETENCY_QUESTION",
+          "content": "Which objects are depicted in an image object?",
+          "reasoner": "hermiT 1.4.3.456",
+          "status": "failed",
+          "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . PREFIX visualsense: <http://www.w3id.org/visualsense> . SELECT ?depictedObject  WHERE { ?imageObject a visualsense:ImageObject . ?depictedObject a visualsense:DepictedObject . ?depictedObject visualsense:isDepictedIn ?imageObject .}",
+          "data": "",
+          "dataFileName": "VisualSense/VisualSense/datasets/CQ1_20230228135257248.ttl",
+          "expectedResults": "",
+          "expectedResultsFileName": "VisualSense/VisualSense/expectedResults/ER1.json",
+          "id": "CQ002",
+          "check": 0,
+          "statusNotes": "<Response [401]>"
         }
-    ],
-    "fragments": [
-        {
-            "name": "VisualSense",
-            "ontologyName": "VisualSense",
-            "fileName": "VisualSense/VisualSense/visualsense.owl",
-            "tests": [
-                {
-                    "type": "COMPETENCY_QUESTION",
-                    "content": "Which objects are depicted in an image object?",
-                    "reasoner": "hermiT 1.4.3.456",
-                    "status": "failed",
-                    "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . PREFIX visualsense: <http://www.w3id.org/visualsense> . SELECT ?depictedObject  WHERE { ?imageObject a visualsense:ImageObject . ?depictedObject a visualsense:DepictedObject . ?depictedObject visualsense:isDepictedIn ?imageObject .}",
-                    "data": "",
-                    "dataFileName": "VisualSense/VisualSense/datasets/CQ1_20230228135257248.ttl",
-                    "expectedResults": "",
-                    "expectedResultsFileName": "VisualSense/VisualSense/expectedResults/ER1.json",
-                    "id": "CQ001",
-                    "check": 0,
-                    "statusNotes": "<Response [401]>"
-                },
-                {
-                    "type": "COMPETENCY_QUESTION",
-                    "content": "Which objects are depicted in an image object?",
-                    "reasoner": "hermiT 1.4.3.456",
-                    "status": "failed",
-                    "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . PREFIX visualsense: <http://www.w3id.org/visualsense> . SELECT ?depictedObject  WHERE { ?imageObject a visualsense:ImageObject . ?depictedObject a visualsense:DepictedObject . ?depictedObject visualsense:isDepictedIn ?imageObject .}",
-                    "data": "",
-                    "dataFileName": "VisualSense/VisualSense/datasets/CQ1_20230228135257248.ttl",
-                    "expectedResults": "",
-                    "expectedResultsFileName": "VisualSense/VisualSense/expectedResults/ER1.json",
-                    "id": "CQ002",
-                    "check": 0,
-                    "statusNotes": "<Response [401]>"
-                }
-            ]
-        }
-    ]
+      ]
+    }
+  ]
 }
