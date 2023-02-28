@@ -10,3 +10,5 @@ ERROR 2023-02-28 13:00:19,022 [main] (ErrorHandlerFactory.java:106) - [line: 11,
 ERROR 2023-02-28 13:00:20,239 [main] (ErrorHandlerFactory.java:106) - [line: 11, col: 30] Triples not terminated by DOT
  INFO 2023-02-28 13:00:20,421 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/FiorelaCiroku/visualsense-1/main/XDTesting/VisualSense/VisualSense/CompetencyQuestionVerificationTest/CQTestCase/CQ002.ttl
 ERROR 2023-02-28 13:00:21,190 [main] (ErrorHandlerFactory.java:106) - [line: 11, col: 30] Triples not terminated by DOT
+ INFO 2023-02-28 16:11:33,759 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/FiorelaCiroku/visualsense-1/main/XDTesting/VisualSense/VisualSense/CompetencyQuestionVerificationTest/CQTestCase/CQ001.ttl
+ INFO 2023-02-28 16:11:35,247 [main] (OWLUnit.java:89) - Test case URI https://raw.githubusercontent.com/FiorelaCiroku/visualsense-1/main/XDTesting/VisualSense/VisualSense/CompetencyQuestionVerificationTest/CQTestCase/CQ001.ttl
