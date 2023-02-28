@@ -11,7 +11,20 @@
       "name": "VisualSense",
       "ontologyName": "VisualSense",
       "fileName": "VisualSense/VisualSense/visualsense.owl",
-      "tests": []
+      "tests": [
+        {
+          "type": "COMPETENCY_QUESTION",
+          "content": "Which objects are depicted in an image object?",
+          "reasoner": "hermiT 1.4.3.456",
+          "status": "running",
+          "query": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . PREFIX visualsense: <http://www.w3id.org/visualsense> . SELECT ?depictedObject  WHERE { ?imageObject a visualsense:ImageObject . ?depictedObject a visualsense:DepictedObject . ?depictedObject visualsense:isDepictedIn ?imageObject .}",
+          "data": "",
+          "dataFileName": "VisualSense/VisualSense/datasets/CQ1_20230228135257248.ttl",
+          "expectedResults": "",
+          "expectedResultsFileName": "VisualSense/VisualSense/expectedResults/ER1_20230228171053706.json",
+          "id": "CQ001"
+        }
+      ]
     }
   ]
 }
